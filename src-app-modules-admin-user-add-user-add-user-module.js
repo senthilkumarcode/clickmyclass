@@ -2986,6 +2986,7 @@ class NewUserComponent {
     ngOnInit() {
     }
     ngOnChanges() {
+        this.message = null;
         this.user.genderId = 43;
         if (this.user.phone != null) {
             this.userInput = 'phone';
@@ -2996,7 +2997,7 @@ class NewUserComponent {
     }
 }
 NewUserComponent.ɵfac = function NewUserComponent_Factory(t) { return new (t || NewUserComponent)(); };
-NewUserComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NewUserComponent, selectors: [["new-user"]], inputs: { user: "user" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 47, vars: 27, consts: [[1, "new-user-wrapper", "mt-5"], ["class", "mb-5", 3, "appearance", "showIcon", "type", 4, "ngIf"], ["name", "newUserForm", "novalidate", "", 3, "ngSubmit"], ["newUserForm", "ngForm"], [1, "bg-card", "p-0", "shadow"], [1, "p-10"], [1, "row"], [1, "col-sm-4"], [1, "input-box"], ["type", "text", "placeholder", "Enter", "name", "firstName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "lastName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "email", "required", "", 1, "form-control", 3, "ngModel", "readonly", "ngModelChange"], ["name", "phone", 1, "w-100", 3, "inputId", "preferredCountries", "enableAutoCountrySelect", "enablePlaceholder", "searchCountryFlag", "searchCountryField", "selectFirstCountry", "selectedCountryISO", "maxLength", "phoneValidation", "separateDialCode", "ngModel", "disabled", "ngModelChange"], [1, "input-box", "radio-box"], [1, "form-group"], ["name", "genderType", "id", "male", "type", "radio", 3, "ngModel", "value", "ngModelChange"], ["for", "male", 1, "radio-inline"], ["name", "genderType", "id", "female", "type", "radio", 3, "ngModel", "value", "ngModelChange"], ["for", "female", 1, "radio-inline"], ["type", "password", "placeholder", "Enter", "name", "password", "autocomplete", "new-password", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "float-right", "mt-4"], ["mat-flat-button", "", 3, "color"], [1, "mb-5", 3, "appearance", "showIcon", "type"]], template: function NewUserComponent_Template(rf, ctx) { if (rf & 1) {
+NewUserComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NewUserComponent, selectors: [["new-user"]], inputs: { user: "user" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 47, vars: 27, consts: [[1, "new-user-wrapper", "mt-5"], ["class", "mb-5", 3, "appearance", "showIcon", "type", 4, "ngIf"], ["name", "newUserForm", "novalidate", "", 3, "ngSubmit"], ["newUserForm", "ngForm"], [1, "bg-card", "p-0", "shadow"], [1, "p-10"], [1, "row"], [1, "col-sm-4"], [1, "input-box"], ["type", "text", "placeholder", "Enter", "name", "firstName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "lastName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "email", "required", "", 1, "form-control", 3, "ngModel", "disabled", "ngModelChange"], ["name", "phone", 1, "w-100", 3, "inputId", "preferredCountries", "enableAutoCountrySelect", "enablePlaceholder", "searchCountryFlag", "searchCountryField", "selectFirstCountry", "selectedCountryISO", "maxLength", "phoneValidation", "separateDialCode", "ngModel", "disabled", "ngModelChange"], [1, "input-box", "radio-box"], [1, "form-group"], ["name", "genderType", "id", "male", "type", "radio", 3, "ngModel", "value", "ngModelChange"], ["for", "male", 1, "radio-inline"], ["name", "genderType", "id", "female", "type", "radio", 3, "ngModel", "value", "ngModelChange"], ["for", "female", 1, "radio-inline"], ["type", "password", "placeholder", "Enter", "name", "password", "autocomplete", "new-password", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], [1, "float-right", "mt-4"], ["mat-flat-button", "", 3, "color"], [1, "mb-5", 3, "appearance", "showIcon", "type"]], template: function NewUserComponent_Template(rf, ctx) { if (rf & 1) {
         const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NewUserComponent_learn_message_1_Template, 2, 5, "learn-message", 1);
@@ -3028,7 +3029,7 @@ NewUserComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Email ID");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Email ID*");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "input", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NewUserComponent_Template_input_ngModelChange_21_listener($event) { return ctx.user.email = $event; });
@@ -3048,7 +3049,7 @@ NewUserComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Gender");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Gender*");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "input", 15);
@@ -3096,7 +3097,7 @@ NewUserComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.user.lastName);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.user.email)("readonly", ctx.userInput == "email");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.user.email)("disabled", ctx.userInput == "email");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("inputId", "userMobile")("preferredCountries", ctx.preferredCountries)("enableAutoCountrySelect", true)("enablePlaceholder", true)("searchCountryFlag", true)("searchCountryField", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](24, _c0, ctx.SearchCountryField.Iso2, ctx.SearchCountryField.Name))("selectFirstCountry", false)("selectedCountryISO", ctx.selectedCountryISO)("maxLength", 15)("phoneValidation", false)("separateDialCode", true)("ngModel", ctx.user.phone)("disabled", ctx.userInput == "phone");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
