@@ -120,6 +120,7 @@ class AddUserComponent {
         }
     }
     checkEmptyEmail(data) {
+        this.isUserNotAvailable = false;
         if (data == "" || data == null) {
             this.userInput = "";
             setTimeout(() => {
@@ -138,6 +139,7 @@ class AddUserComponent {
         }
     }
     checkEmptyPhoneNumber(data) {
+        this.isUserNotAvailable = false;
         if (data == "" || data == null) {
             this.userInput = "";
             setTimeout(() => {
@@ -2987,6 +2989,7 @@ class NewUserComponent {
     }
     ngOnChanges() {
         this.message = null;
+        this.selectedCountryISO = 'IN';
         this.user.genderId = 43;
         if (this.user.phone != null) {
             this.userInput = 'phone';
