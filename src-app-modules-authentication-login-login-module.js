@@ -156,8 +156,8 @@ class LoginComponent {
     ngOnInit() {
         // Create the form
         this.signInForm = this._formBuilder.group({
-            email: ['me.class@cmc.com'],
-            password: ['admin'],
+            email: ['rajnarayan222@yahoo.com'],
+            password: ['Rajeev@123'],
             rememberMe: ['']
         });
         document.querySelector('body').className = '';
@@ -179,7 +179,8 @@ class LoginComponent {
         const credentials = this.signInForm.value;
         // Sign in
         this._authService.signIn(credentials)
-            .subscribe(() => {
+            .subscribe((response) => {
+            console.log(response);
             // Set the redirect url.
             // The '/signed-in-redirect' is a dummy url to catch the request and redirect the user
             // to the correct page after a successful sign in. This way, that url can be set via
@@ -193,7 +194,7 @@ class LoginComponent {
             // Show the error message
             this.message = {
                 appearance: 'outline',
-                content: response.error,
+                content: 'Invalid Credentials',
                 shake: true,
                 showIcon: false,
                 type: 'error'
