@@ -26,12 +26,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 class AddNotificationModule {
 }
 AddNotificationModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AddNotificationModule });
 AddNotificationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AddNotificationModule_Factory(t) { return new (t || AddNotificationModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-            src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"],
+            src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"].forRoot(),
             src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_3__["SelectModule"],
             ngx_quill__WEBPACK_IMPORTED_MODULE_4__["QuillModule"].forRoot({
                 modules: {
@@ -55,16 +56,14 @@ AddNotificationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
             }),
             _add_notification_routing_module__WEBPACK_IMPORTED_MODULE_5__["AddNotificationRoutingModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AddNotificationModule, { declarations: [_add_notification_component__WEBPACK_IMPORTED_MODULE_6__["AddNotificationComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-        src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"],
-        src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_3__["SelectModule"], ngx_quill__WEBPACK_IMPORTED_MODULE_4__["QuillModule"], _add_notification_routing_module__WEBPACK_IMPORTED_MODULE_5__["AddNotificationRoutingModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AddNotificationModule, { declarations: [_add_notification_component__WEBPACK_IMPORTED_MODULE_6__["AddNotificationComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"], src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_3__["SelectModule"], ngx_quill__WEBPACK_IMPORTED_MODULE_4__["QuillModule"], _add_notification_routing_module__WEBPACK_IMPORTED_MODULE_5__["AddNotificationRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddNotificationModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
                 declarations: [_add_notification_component__WEBPACK_IMPORTED_MODULE_6__["AddNotificationComponent"]],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                    src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"],
+                    src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"].forRoot(),
                     src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_3__["SelectModule"],
                     ngx_quill__WEBPACK_IMPORTED_MODULE_4__["QuillModule"].forRoot({
                         modules: {
