@@ -142,7 +142,7 @@ function AddEnquirySourceComponent_ng_container_2_Template(rf, ctx) { if (rf & 1
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "input", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquirySourceComponent_ng_container_2_Template_input_ngModelChange_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.enquiry.title = $event; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquirySourceComponent_ng_container_2_Template_input_ngModelChange_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.enquiry.name = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -154,7 +154,7 @@ function AddEnquirySourceComponent_ng_container_2_Template(rf, ctx) { if (rf & 1
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "*");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquirySourceComponent_ng_container_2_Template_input_ngModelChange_24_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r9.enquiry.description = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -162,7 +162,7 @@ function AddEnquirySourceComponent_ng_container_2_Template(rf, ctx) { if (rf & 1
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Submit");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -178,7 +178,7 @@ function AddEnquirySourceComponent_ng_container_2_Template(rf, ctx) { if (rf & 1
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgIcon", "close");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.title);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.description);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
@@ -222,7 +222,7 @@ class AddEnquirySourceComponent {
     }
 }
 AddEnquirySourceComponent.ɵfac = function AddEnquirySourceComponent_Factory(t) { return new (t || AddEnquirySourceComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_admin_enquiries_enquiry_setup_enquiry_setup_component__WEBPACK_IMPORTED_MODULE_3__["EnquirySetupComponent"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_4__["SharedService"])); };
-AddEnquirySourceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddEnquirySourceComponent, selectors: [["app-add-enquiry-source"]], decls: 3, vars: 2, consts: [[1, "add-enquiry-source-wrapper"], [4, "ngIf"], [1, "title"], [1, "ml-auto"], ["mat-icon-button", "", 3, "click"], [3, "svgIcon"], ["name", "addEnquiryTypeForm", "novalidate", "", 3, "ngSubmit"], ["addEnquirySourceForm", "ngForm"], [1, "row"], [1, "col-sm-12"], [1, "input-box"], [1, "mandatory"], ["type", "text", "placeholder", "Enter", "name", "securityCategoryName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["mat-flat-button", "", 1, "w-100", 3, "color"]], template: function AddEnquirySourceComponent_Template(rf, ctx) { if (rf & 1) {
+AddEnquirySourceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddEnquirySourceComponent, selectors: [["app-add-enquiry-source"]], decls: 3, vars: 2, consts: [[1, "add-enquiry-source-wrapper"], [4, "ngIf"], [1, "title"], [1, "ml-auto"], ["mat-icon-button", "", 3, "click"], [3, "svgIcon"], ["name", "addEnquiryTypeForm", "novalidate", "", 3, "ngSubmit"], ["addEnquirySourceForm", "ngForm"], [1, "row"], [1, "col-sm-12"], [1, "input-box"], [1, "mandatory"], ["type", "text", "placeholder", "Enter", "name", "name", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "description", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["mat-flat-button", "", 1, "w-100", 3, "color"]], template: function AddEnquirySourceComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AddEnquirySourceComponent_app_loader_1_Template, 1, 0, "app-loader", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, AddEnquirySourceComponent_ng_container_2_Template, 29, 6, "ng-container", 1);
@@ -395,7 +395,7 @@ class EnquiryTypeComponent {
     constructor() {
         this.isExpanded = false;
         this.isDataLoaded = true;
-        this.prgramData = "";
+        this.programData = "";
         this.fullTypesList = [];
         this.search = '';
         this.ItemStartIndex = 0;
@@ -634,7 +634,7 @@ function EnquirySetupComponent_ng_container_8_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h5", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Setup");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 8);
@@ -923,7 +923,7 @@ class EnquiryModeComponent {
     constructor() {
         this.isExpanded = false;
         this.isDataLoaded = true;
-        this.prgramData = "";
+        this.programData = "";
         this.fullTypesList = [];
         this.search = '';
         this.ItemStartIndex = 0;
@@ -1185,7 +1185,7 @@ function AddEnquiryTypeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "input", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquiryTypeComponent_ng_container_2_Template_input_ngModelChange_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.enquiry.title = $event; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquiryTypeComponent_ng_container_2_Template_input_ngModelChange_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.enquiry.name = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1197,7 +1197,7 @@ function AddEnquiryTypeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "*");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquiryTypeComponent_ng_container_2_Template_input_ngModelChange_24_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r9.enquiry.description = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1205,7 +1205,7 @@ function AddEnquiryTypeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Submit");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1221,7 +1221,7 @@ function AddEnquiryTypeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgIcon", "close");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.title);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.description);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
@@ -1265,7 +1265,7 @@ class AddEnquiryTypeComponent {
     }
 }
 AddEnquiryTypeComponent.ɵfac = function AddEnquiryTypeComponent_Factory(t) { return new (t || AddEnquiryTypeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_admin_enquiries_enquiry_setup_enquiry_setup_component__WEBPACK_IMPORTED_MODULE_3__["EnquirySetupComponent"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_4__["SharedService"])); };
-AddEnquiryTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddEnquiryTypeComponent, selectors: [["app-add-enquiry-type"]], decls: 3, vars: 2, consts: [[1, "add-enquiry-type-wrapper"], [4, "ngIf"], [1, "title"], [1, "ml-auto"], ["mat-icon-button", "", 3, "click"], [3, "svgIcon"], ["name", "addEnquiryTypeForm", "novalidate", "", 3, "ngSubmit"], ["addEnquiryTypeForm", "ngForm"], [1, "row"], [1, "col-sm-12"], [1, "input-box"], [1, "mandatory"], ["type", "text", "placeholder", "Enter", "name", "securityCategoryName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["mat-flat-button", "", 1, "w-100", 3, "color"]], template: function AddEnquiryTypeComponent_Template(rf, ctx) { if (rf & 1) {
+AddEnquiryTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddEnquiryTypeComponent, selectors: [["app-add-enquiry-type"]], decls: 3, vars: 2, consts: [[1, "add-enquiry-type-wrapper"], [4, "ngIf"], [1, "title"], [1, "ml-auto"], ["mat-icon-button", "", 3, "click"], [3, "svgIcon"], ["name", "addEnquiryTypeForm", "novalidate", "", 3, "ngSubmit"], ["addEnquiryTypeForm", "ngForm"], [1, "row"], [1, "col-sm-12"], [1, "input-box"], [1, "mandatory"], ["type", "text", "placeholder", "Enter", "name", "name", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "description", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["mat-flat-button", "", 1, "w-100", 3, "color"]], template: function AddEnquiryTypeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AddEnquiryTypeComponent_app_loader_1_Template, 1, 0, "app-loader", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, AddEnquiryTypeComponent_ng_container_2_Template, 29, 6, "ng-container", 1);
@@ -1369,7 +1369,7 @@ class EnquirySourceComponent {
     constructor() {
         this.isExpanded = false;
         this.isDataLoaded = true;
-        this.prgramData = "";
+        this.programData = "";
         this.fullSourcesList = [];
         this.search = '';
         this.ItemStartIndex = 0;
@@ -1566,7 +1566,7 @@ function AddEnquiryModeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "input", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquiryModeComponent_ng_container_2_Template_input_ngModelChange_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.enquiry.title = $event; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquiryModeComponent_ng_container_2_Template_input_ngModelChange_17_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.enquiry.name = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1578,7 +1578,7 @@ function AddEnquiryModeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "*");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddEnquiryModeComponent_ng_container_2_Template_input_ngModelChange_24_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r9.enquiry.description = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1586,7 +1586,7 @@ function AddEnquiryModeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Submit");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1602,7 +1602,7 @@ function AddEnquiryModeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgIcon", "close");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.title);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r1.enquiry.description);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
@@ -1646,7 +1646,7 @@ class AddEnquiryModeComponent {
     }
 }
 AddEnquiryModeComponent.ɵfac = function AddEnquiryModeComponent_Factory(t) { return new (t || AddEnquiryModeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_admin_enquiries_enquiry_setup_enquiry_setup_component__WEBPACK_IMPORTED_MODULE_3__["EnquirySetupComponent"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_4__["SharedService"])); };
-AddEnquiryModeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddEnquiryModeComponent, selectors: [["app-add-enquiry-mode"]], decls: 3, vars: 2, consts: [[1, "add-enquiry-mode-wrapper"], [4, "ngIf"], [1, "title"], [1, "ml-auto"], ["mat-icon-button", "", 3, "click"], [3, "svgIcon"], ["name", "addEnquiryModeForm", "novalidate", "", 3, "ngSubmit"], ["addEnquiryModeForm", "ngForm"], [1, "row"], [1, "col-sm-12"], [1, "input-box"], [1, "mandatory"], ["type", "text", "placeholder", "Enter", "name", "securityCategoryName", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["mat-flat-button", "", 1, "w-100", 3, "color"]], template: function AddEnquiryModeComponent_Template(rf, ctx) { if (rf & 1) {
+AddEnquiryModeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddEnquiryModeComponent, selectors: [["app-add-enquiry-mode"]], decls: 3, vars: 2, consts: [[1, "add-enquiry-mode-wrapper"], [4, "ngIf"], [1, "title"], [1, "ml-auto"], ["mat-icon-button", "", 3, "click"], [3, "svgIcon"], ["name", "addEnquiryModeForm", "novalidate", "", 3, "ngSubmit"], ["addEnquiryModeForm", "ngForm"], [1, "row"], [1, "col-sm-12"], [1, "input-box"], [1, "mandatory"], ["type", "text", "placeholder", "Enter", "name", "name", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "description", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["mat-flat-button", "", 1, "w-100", 3, "color"]], template: function AddEnquiryModeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AddEnquiryModeComponent_app_loader_1_Template, 1, 0, "app-loader", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, AddEnquiryModeComponent_ng_container_2_Template, 29, 6, "ng-container", 1);
