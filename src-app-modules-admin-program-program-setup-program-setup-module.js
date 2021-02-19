@@ -1292,6 +1292,8 @@ class AddMainProgramComponent {
             "lastModified": moment_timezone__WEBPACK_IMPORTED_MODULE_2___default()().toISOString(),
             "modifiedBy": 0
         };
+        this.programService.addUpdateProgram().subscribe((res) => {
+        });
     }
     ngOnInit() {
         this.program = {};
