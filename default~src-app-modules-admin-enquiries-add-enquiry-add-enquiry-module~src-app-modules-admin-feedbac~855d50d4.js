@@ -292,6 +292,11 @@ const defaultTooltip = [
         title: 'stickerNumber',
         text: 'Enter the Pass Number'
     },
+    {
+        id: 'kidsCount',
+        title: 'kidsCount',
+        text: 'some text'
+    },
 ];
 
 

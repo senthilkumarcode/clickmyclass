@@ -1,64 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["src-app-modules-admin-enquiries-add-enquiry-add-enquiry-module"],{
 
-/***/ "8uQT":
-/*!***************************************************************!*\
-  !*** ./src/app/modules/ui/datepicker/datepicker.component.ts ***!
-  \***************************************************************/
-/*! exports provided: DatepickerComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatepickerComponent", function() { return DatepickerComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/form-field */ "kmnG");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/input */ "qFsG");
-/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/datepicker */ "iadO");
-
-
-
-
-
-class DatepickerComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-}
-DatepickerComponent.ɵfac = function DatepickerComponent_Factory(t) { return new (t || DatepickerComponent)(); };
-DatepickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DatepickerComponent, selectors: [["datepicker"]], decls: 10, vars: 2, consts: [[1, "flex"], [1, "flex-auto"], [1, "ml-1", "text-warn", "font-medium"], ["matInput", "", 3, "matDatepicker"], ["matSuffix", "", 3, "for"], ["picker1", ""]], template: function DatepickerComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-form-field", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "DOB");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "span", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "*");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "input", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "mat-datepicker-toggle", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "mat-datepicker", null, 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matDatepicker", _r0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("for", _r0);
-    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_2__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_3__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_3__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_1__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_3__["MatDatepicker"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJkYXRlcGlja2VyLmNvbXBvbmVudC5zY3NzIn0= */"], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DatepickerComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'datepicker',
-                templateUrl: './datepicker.component.html',
-                styleUrls: ['./datepicker.component.scss'],
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
-            }]
-    }], function () { return []; }, null); })();
-
-
-/***/ }),
-
 /***/ "9TqA":
 /*!****************************************************************************************************!*\
   !*** ./src/app/modules/admin/enquiries/add-enquiry/add-kids-enquiry/add-kids-enquiry.component.ts ***!
@@ -72,11 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _ui_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../ui/datepicker/datepicker.component */ "8uQT");
-/* harmony import */ var _ui_select_select_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../ui/select/select.component */ "GlKx");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
-/* harmony import */ var src_app_modules_ui_message_message_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/modules/ui/message/message.component */ "rWrY");
-
+/* harmony import */ var _ui_select_select_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../ui/select/select.component */ "GlKx");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
+/* harmony import */ var src_app_modules_ui_message_message_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/modules/ui/message/message.component */ "rWrY");
 
 
 
@@ -100,7 +39,7 @@ class AddKidsEnquiryComponent {
         this.message = null;
     }
     onAgeChange(event) {
-        this.self.preferredStyleId = event[0].id;
+        this.self.kidsCount = event[0].id;
     }
     submitAddKidsEnquiryForm(form) {
     }
@@ -123,7 +62,7 @@ class AddKidsEnquiryComponent {
     }
 }
 AddKidsEnquiryComponent.ɵfac = function AddKidsEnquiryComponent_Factory(t) { return new (t || AddKidsEnquiryComponent)(); };
-AddKidsEnquiryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddKidsEnquiryComponent, selectors: [["app-add-kids-enquiry"]], decls: 44, vars: 9, consts: [[1, "add-kids-enquiry-wrapper"], [1, "bg-card", "p-12", "shadow"], ["name", "addKidsEnquiryForm", "novalidate", "", 3, "ngSubmit"], ["addKidsEnquiryForm", "ngForm"], [1, "row"], [1, "col-md-6"], ["class", "mb-4", 3, "appearance", "showIcon", "type", 4, "ngIf"], [1, "col-sm-6"], [1, "input-box"], [1, "ml-1", "text-warn", "font-medium"], ["type", "text", "placeholder", "Enter", "name", "firstName", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "lastName", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter Package Cost", "name", "PackageCost", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter Age", "name", "age", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["labelText", "Kids Count", "fieldPlaceholder", "Select Kids Count", "fieldValue", "value", "fieldId", "id", 3, "fieldRequired", "fieldList", "fieldModel", "fieldParams"], [1, "col-sm-12", "mt-4", "text-right"], ["mat-flat-button", "", 1, "min-w-150", 3, "color"], [1, "mb-4", 3, "appearance", "showIcon", "type"]], template: function AddKidsEnquiryComponent_Template(rf, ctx) { if (rf & 1) {
+AddKidsEnquiryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddKidsEnquiryComponent, selectors: [["app-add-kids-enquiry"]], decls: 43, vars: 10, consts: [[1, "add-kids-enquiry-wrapper"], [1, "bg-card", "p-12", "shadow"], ["name", "addKidsEnquiryForm", "novalidate", "", 3, "ngSubmit"], ["addKidsEnquiryForm", "ngForm"], [1, "row"], [1, "col-md-6"], ["class", "mb-4", 3, "appearance", "showIcon", "type", 4, "ngIf"], [1, "col-sm-6"], [1, "input-box"], [1, "ml-1", "text-warn", "font-medium"], ["type", "text", "placeholder", "Enter", "name", "firstName", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter", "name", "lastName", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter Package Cost", "name", "PackageCost", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter Age", "name", "age", "autocomplete", "off", "required", "", 1, "form-control", 3, "ngModel", "ngModelChange"], ["labelText", "Kids Count", "fieldPlaceholder", "Select Kids Count", "fieldValue", "value", "fieldId", "id", 3, "fieldRequired", "fieldList", "fieldModel", "toolTip", "fieldParams"], [1, "col-sm-12", "mt-4", "text-right"], ["mat-flat-button", "", 1, "min-w-150", 3, "color"], [1, "mb-4", 3, "appearance", "showIcon", "type"]], template: function AddKidsEnquiryComponent_Template(rf, ctx) { if (rf & 1) {
         const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
@@ -174,32 +113,30 @@ AddKidsEnquiryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "datepicker");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "Age");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "span", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "*");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Age");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "span", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "*");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "input", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddKidsEnquiryComponent_Template_input_ngModelChange_37_listener($event) { return ctx.self.age = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "input", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AddKidsEnquiryComponent_Template_input_ngModelChange_36_listener($event) { return ctx.self.age = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "learn-select", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("fieldParams", function AddKidsEnquiryComponent_Template_learn_select_fieldParams_39_listener($event) { return ctx.onAgeChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "learn-select", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("fieldParams", function AddKidsEnquiryComponent_Template_learn_select_fieldParams_38_listener($event) { return ctx.onAgeChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "button", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Submit");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "button", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Submit");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -215,13 +152,13 @@ AddKidsEnquiryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.self.lastName);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.self.lastName);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.self.age);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("fieldRequired", "required")("fieldList", ctx.kidsCountList)("fieldModel", ctx.self.kidsCount);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("fieldRequired", "required")("fieldList", ctx.kidsCountList)("fieldModel", ctx.self.kidsCount)("toolTip", "kidsCount");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("color", "primary");
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgForm"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgModel"], _ui_datepicker_datepicker_component__WEBPACK_IMPORTED_MODULE_3__["DatepickerComponent"], _ui_select_select_component__WEBPACK_IMPORTED_MODULE_4__["SelectComponent"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButton"], src_app_modules_ui_message_message_component__WEBPACK_IMPORTED_MODULE_6__["LearnMessageComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhZGQta2lkcy1lbnF1aXJ5LmNvbXBvbmVudC5zY3NzIn0= */"] });
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgForm"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgModel"], _ui_select_select_component__WEBPACK_IMPORTED_MODULE_3__["SelectComponent"], _angular_material_button__WEBPACK_IMPORTED_MODULE_4__["MatButton"], src_app_modules_ui_message_message_component__WEBPACK_IMPORTED_MODULE_5__["LearnMessageComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhZGQta2lkcy1lbnF1aXJ5LmNvbXBvbmVudC5zY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddKidsEnquiryComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -411,12 +348,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/modules/ui/select/select.module */ "Miw4");
 /* harmony import */ var src_app_modules_ui_message_message_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/modules/ui/message/message.module */ "cGRK");
 /* harmony import */ var src_app_modules_ui_help_tooltip_help_tooltip_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/modules/ui/help-tooltip/help-tooltip.module */ "4ibu");
-/* harmony import */ var src_app_modules_ui_datepicker_datepicker_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/modules/ui/datepicker/datepicker.module */ "nmPQ");
-/* harmony import */ var _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./add-enquiry-routing.module */ "FAGM");
-/* harmony import */ var _add_enquiry_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./add-enquiry.component */ "tJti");
-/* harmony import */ var _add_self_enquiry_add_self_enquiry_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./add-self-enquiry/add-self-enquiry.component */ "fj6L");
-/* harmony import */ var _add_kids_enquiry_add_kids_enquiry_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./add-kids-enquiry/add-kids-enquiry.component */ "9TqA");
-
+/* harmony import */ var _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./add-enquiry-routing.module */ "FAGM");
+/* harmony import */ var _add_enquiry_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./add-enquiry.component */ "tJti");
+/* harmony import */ var _add_self_enquiry_add_self_enquiry_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./add-self-enquiry/add-self-enquiry.component */ "fj6L");
+/* harmony import */ var _add_kids_enquiry_add_kids_enquiry_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./add-kids-enquiry/add-kids-enquiry.component */ "9TqA");
 
 
 
@@ -439,82 +374,26 @@ AddEnquiryModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
             src_learn_components_card_card_module__WEBPACK_IMPORTED_MODULE_3__["LearnCardModule"],
             src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_4__["SelectModule"],
             src_app_modules_ui_message_message_module__WEBPACK_IMPORTED_MODULE_5__["LearnMessageModule"],
-            src_app_modules_ui_datepicker_datepicker_module__WEBPACK_IMPORTED_MODULE_7__["DatepickerModule"],
             src_app_modules_ui_help_tooltip_help_tooltip_module__WEBPACK_IMPORTED_MODULE_6__["HelpTooltipModule"],
-            _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_8__["AddEnquiryRoutingModule"]
+            _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_7__["AddEnquiryRoutingModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AddEnquiryModule, { declarations: [_add_enquiry_component__WEBPACK_IMPORTED_MODULE_9__["AddEnquiryComponent"], _add_self_enquiry_add_self_enquiry_component__WEBPACK_IMPORTED_MODULE_10__["AddSelfEnquiryComponent"], _add_kids_enquiry_add_kids_enquiry_component__WEBPACK_IMPORTED_MODULE_11__["AddKidsEnquiryComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"], src_learn_components_card_card_module__WEBPACK_IMPORTED_MODULE_3__["LearnCardModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AddEnquiryModule, { declarations: [_add_enquiry_component__WEBPACK_IMPORTED_MODULE_8__["AddEnquiryComponent"], _add_self_enquiry_add_self_enquiry_component__WEBPACK_IMPORTED_MODULE_9__["AddSelfEnquiryComponent"], _add_kids_enquiry_add_kids_enquiry_component__WEBPACK_IMPORTED_MODULE_10__["AddKidsEnquiryComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"], src_learn_components_card_card_module__WEBPACK_IMPORTED_MODULE_3__["LearnCardModule"],
         src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_4__["SelectModule"],
         src_app_modules_ui_message_message_module__WEBPACK_IMPORTED_MODULE_5__["LearnMessageModule"],
-        src_app_modules_ui_datepicker_datepicker_module__WEBPACK_IMPORTED_MODULE_7__["DatepickerModule"],
         src_app_modules_ui_help_tooltip_help_tooltip_module__WEBPACK_IMPORTED_MODULE_6__["HelpTooltipModule"],
-        _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_8__["AddEnquiryRoutingModule"]] }); })();
+        _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_7__["AddEnquiryRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AddEnquiryModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                declarations: [_add_enquiry_component__WEBPACK_IMPORTED_MODULE_9__["AddEnquiryComponent"], _add_self_enquiry_add_self_enquiry_component__WEBPACK_IMPORTED_MODULE_10__["AddSelfEnquiryComponent"], _add_kids_enquiry_add_kids_enquiry_component__WEBPACK_IMPORTED_MODULE_11__["AddKidsEnquiryComponent"]],
+                declarations: [_add_enquiry_component__WEBPACK_IMPORTED_MODULE_8__["AddEnquiryComponent"], _add_self_enquiry_add_self_enquiry_component__WEBPACK_IMPORTED_MODULE_9__["AddSelfEnquiryComponent"], _add_kids_enquiry_add_kids_enquiry_component__WEBPACK_IMPORTED_MODULE_10__["AddKidsEnquiryComponent"]],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                     src_app_shared_shared_module__WEBPACK_IMPORTED_MODULE_2__["SharedModule"].forRoot(),
                     src_learn_components_card_card_module__WEBPACK_IMPORTED_MODULE_3__["LearnCardModule"],
                     src_app_modules_ui_select_select_module__WEBPACK_IMPORTED_MODULE_4__["SelectModule"],
                     src_app_modules_ui_message_message_module__WEBPACK_IMPORTED_MODULE_5__["LearnMessageModule"],
-                    src_app_modules_ui_datepicker_datepicker_module__WEBPACK_IMPORTED_MODULE_7__["DatepickerModule"],
                     src_app_modules_ui_help_tooltip_help_tooltip_module__WEBPACK_IMPORTED_MODULE_6__["HelpTooltipModule"],
-                    _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_8__["AddEnquiryRoutingModule"]
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "nmPQ":
-/*!************************************************************!*\
-  !*** ./src/app/modules/ui/datepicker/datepicker.module.ts ***!
-  \************************************************************/
-/*! exports provided: DatepickerModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatepickerModule", function() { return DatepickerModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var src_app_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/material */ "MfpL");
-/* harmony import */ var _datepicker_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./datepicker.component */ "8uQT");
-
-
-
-
-
-
-class DatepickerModule {
-}
-DatepickerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: DatepickerModule });
-DatepickerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function DatepickerModule_Factory(t) { return new (t || DatepickerModule)(); }, imports: [[
-            _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-            src_app_material__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"]
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](DatepickerModule, { declarations: [_datepicker_component__WEBPACK_IMPORTED_MODULE_4__["DatepickerComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-        src_app_material__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"]], exports: [_datepicker_component__WEBPACK_IMPORTED_MODULE_4__["DatepickerComponent"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DatepickerModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                declarations: [_datepicker_component__WEBPACK_IMPORTED_MODULE_4__["DatepickerComponent"]],
-                exports: [
-                    _datepicker_component__WEBPACK_IMPORTED_MODULE_4__["DatepickerComponent"]
-                ],
-                imports: [
-                    _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                    _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-                    src_app_material__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"],
-                    _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"]
+                    _add_enquiry_routing_module__WEBPACK_IMPORTED_MODULE_7__["AddEnquiryRoutingModule"]
                 ]
             }]
     }], null, null); })();
