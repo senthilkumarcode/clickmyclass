@@ -72,7 +72,7 @@ function ProgramListComponent_ng_container_2_ng_container_18_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "mat-icon", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 31);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "mat-icon", 27);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "mat-icon", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ProgramListComponent_ng_container_2_ng_container_18_Template_mat_icon_click_20_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const program_r3 = ctx.$implicit; const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r7.userSettings(program_r3.programId); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -80,30 +80,30 @@ function ProgramListComponent_ng_container_2_ng_container_18_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 33);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 35);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Program Name");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p", 36);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 35);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Select Style");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p", 36);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 35);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Attachment");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "p", 36);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "mat-icon", 37);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "p", 37);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "mat-icon", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -130,8 +130,8 @@ function ProgramListComponent_ng_container_2_ng_container_18_Template(rf, ctx) {
 } }
 function ProgramListComponent_ng_container_2_div_21_Template(rf, ctx) { if (rf & 1) {
     const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 38);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "app-pagination", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "app-pagination", 40);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("outputParams", function ProgramListComponent_ng_container_2_div_21_Template_app_pagination_outputParams_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r9); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r8.getIndexParams($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -354,7 +354,7 @@ class ProgramListComponent {
     }
 }
 ProgramListComponent.ɵfac = function ProgramListComponent_Factory(t) { return new (t || ProgramListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_6__["SharedService"])); };
-ProgramListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProgramListComponent, selectors: [["program-list"]], decls: 3, vars: 1, consts: [[1, "program-list-wrapper"], [1, "main"], [4, "ngIf"], [1, "bg-card", "shadow", "mb-4", "md:flex"], [1, "pb-1"], [1, "text-secondary"], [1, "d-flex", "ml-auto", "mt-4", "md:mt-0"], [1, "mr-3"], [3, "outputParams"], ["mat-flat-button", "", 1, "mr-3", 3, "color", "routerLink"], [1, "d-inline-block", "d-md-none"], [1, "mr-2", 3, "svgIcon"], [1, "text-smr", "md:text-sm"], [1, "pt-5"], [4, "ngFor", "ngForOf"], ["class", "bg-card shadow p-0", 4, "ngIf"], [1, "bg-card", "p-0", "shadow", "mb-8"], [1, "p-8"], [1, "row", "align-items-center"], [1, "col-md-6", "flex", "py-2"], [1, "list"], [1, "mb-2", "-mt-1"], [1, "text-secondary", "others", "pt-1"], [1, "status-badge", "bg-status-green-700"], [1, "font-bold", "text-smr", "text-status-green-900", "text-uppercase"], [1, "ml-4"], [1, "ml-auto", "icon-actions", "d-md-none"], ["svgIcon", "feather:settings", 1, "mx-3", "settings", 3, "click"], [1, "col-md-6", "text-right", "pt-3"], [1, "icon-actions"], ["svgIcon", "feather:edit", 1, "mx-3", "edit", "cursor-pointer", 3, "routerLink"], [1, "d-none", "d-md-inline-block"], [1, "border-top", "px-8", "pt-0", "pb-8", "md:p-8", "list-extras"], [1, "row"], [1, "col-sm-12", "col-md-4", "item"], [1, "font-semibold", "right"], [1, "font-semibold", "right", "flex", "align-items-center"], ["svgIcon", "feather:paperclip", 1, "mr-2", "icon-sm"], [1, "bg-card", "shadow", "p-0"], [3, "totalItems", "ItemStartIndex", "ItemEndIndex", "itemLimit", "outputParams"]], template: function ProgramListComponent_Template(rf, ctx) { if (rf & 1) {
+ProgramListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProgramListComponent, selectors: [["program-list"]], decls: 3, vars: 1, consts: [[1, "program-list-wrapper"], [1, "main"], [4, "ngIf"], [1, "bg-card", "shadow", "mb-4", "md:flex"], [1, "pb-1"], [1, "text-secondary"], [1, "d-flex", "ml-auto", "mt-4", "md:mt-0"], [1, "mr-3"], [3, "outputParams"], ["mat-flat-button", "", 1, "mr-3", 3, "color", "routerLink"], [1, "d-inline-block", "d-md-none"], [1, "mr-2", 3, "svgIcon"], [1, "text-smr", "md:text-sm"], [1, "pt-5"], [4, "ngFor", "ngForOf"], ["class", "bg-card shadow p-0", 4, "ngIf"], [1, "bg-card", "p-0", "shadow", "mb-8"], [1, "p-8"], [1, "row", "align-items-center"], [1, "col-md-6", "flex", "py-2"], [1, "list"], [1, "mb-2", "-mt-1"], [1, "text-secondary", "others", "pt-1"], [1, "status-badge", "bg-status-green-700"], [1, "font-bold", "text-smr", "text-status-green-900", "text-uppercase"], [1, "ml-4"], [1, "ml-auto", "icon-actions", "d-md-none"], ["svgIcon", "feather:settings", 1, "mx-3", "settings", 3, "click"], [1, "col-md-6", "text-right", "pt-3"], [1, "icon-actions"], ["svgIcon", "feather:edit", 1, "mx-5", "md:mx-6", "edit", "cursor-pointer", 3, "routerLink"], [1, "d-none", "d-md-inline-block"], ["svgIcon", "feather:settings", 1, "mx-5", "md:mx-6", "settings", 3, "click"], [1, "border-top", "px-8", "pt-0", "pb-8", "md:p-8", "list-extras"], [1, "row"], [1, "col-sm-12", "col-md-4", "item"], [1, "font-semibold", "right"], [1, "font-semibold", "right", "flex", "align-items-center"], ["svgIcon", "feather:paperclip", 1, "mr-2", "icon-sm"], [1, "bg-card", "shadow", "p-0"], [3, "totalItems", "ItemStartIndex", "ItemEndIndex", "itemLimit", "outputParams"]], template: function ProgramListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, ProgramListComponent_ng_container_2_Template, 22, 11, "ng-container", 2);
