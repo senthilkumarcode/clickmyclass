@@ -147,8 +147,9 @@ class ProgramSetupComponent {
         while (route.firstChild) {
             route = route.firstChild;
         }
+        let drawerData = this.programSetupService.getProgramSetupMatDrawer();
         // Go to the parent route
-        this._router.navigate(['/program/setup'], { relativeTo: route });
+        this._router.navigateByUrl('/program/setup/list/' + drawerData.category);
         this.matDrawer.close();
         this.programSetupService.setProgramSetupMatDrawer(null);
         // Mark for check
@@ -184,6 +185,36 @@ class ProgramSetupComponent {
         //Mark for check
         this._changeDetectorRef.markForCheck();
     }
+    addClassLevelProgram(id) {
+        // Get the current activated route
+        let route = this._activatedRoute;
+        while (route.firstChild) {
+            route = route.firstChild;
+        }
+        this._router.navigate([{ outlets: { primary: 'class', drawer: ['new', id] } }], { relativeTo: route.parent.parent });
+        //Mark for check
+        this._changeDetectorRef.markForCheck();
+    }
+    editClassLevelProgram(id) {
+        // Get the current activated route
+        let route = this._activatedRoute;
+        while (route.firstChild) {
+            route = route.firstChild;
+        }
+        this._router.navigate([{ outlets: { primary: 'class', drawer: ['edit', id] } }], { relativeTo: route.parent.parent });
+        //Mark for check
+        this._changeDetectorRef.markForCheck();
+    }
+    viewClassLevelProgram(id) {
+        // Get the current activated route
+        let route = this._activatedRoute;
+        while (route.firstChild) {
+            route = route.firstChild;
+        }
+        this._router.navigate([{ outlets: { primary: 'class', drawer: 'view' } }], { relativeTo: route.parent.parent });
+        //Mark for check
+        this._changeDetectorRef.markForCheck();
+    }
     ngOnInit() {
         this.navArray = [
             { link: 'main', name: 'Main Program' },
@@ -205,6 +236,16 @@ class ProgramSetupComponent {
                         }
                         else
                             this.editMainProgram(res.id);
+                    }
+                    else if (res.category == 'class') {
+                        if (!res.isedit) {
+                            this.addClassLevelProgram(res.id);
+                            if (res.data != null) {
+                                this.viewClassLevelProgram(res.id);
+                            }
+                        }
+                        else
+                            this.editClassLevelProgram(res.id);
                     }
                 }
             }
@@ -304,6 +345,8 @@ const routes = [
                 }
             },
             { path: 'main', loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/main-program/main-program.module */ "DPYF")).then(m => m.MainProgramModule) },
+            { path: 'class', loadChildren: () => __webpack_require__.e(/*! import() | src-app-modules-admin-program-program-setup-class-level-program-class-level-program-module */ "src-app-modules-admin-program-program-setup-class-level-program-class-level-program-module").then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/class-level-program/class-level-program.module */ "nn3Z")).then(m => m.ClassLevelProgramModule) },
+            { path: 'style', loadChildren: () => __webpack_require__.e(/*! import() | src-app-modules-admin-program-program-setup-style-program-setup-style-program-setup-module */ "src-app-modules-admin-program-program-setup-style-program-setup-style-program-setup-module").then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/style-program-setup/style-program-setup.module */ "y2zS")).then(m => m.StyleProgramSetupModule) },
             { path: '', redirectTo: 'main', pathMatch: 'full' }
         ]
     },
