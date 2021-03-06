@@ -12,11 +12,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenProgramBookingListRoutingModule", function() { return OpenProgramBookingListRoutingModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _open_program_booking_list_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./open-program-booking-list.component */ "nsWW");
 
 
 
 
-const routes = [];
+
+const routes = [
+    { path: '', component: _open_program_booking_list_component__WEBPACK_IMPORTED_MODULE_2__["OpenProgramBookingListComponent"] }
+];
 class OpenProgramBookingListRoutingModule {
 }
 OpenProgramBookingListRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: OpenProgramBookingListRoutingModule });
