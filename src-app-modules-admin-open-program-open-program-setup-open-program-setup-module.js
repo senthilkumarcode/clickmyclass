@@ -455,7 +455,6 @@ class OpenProgramSetupComponent {
     onGlSearchFilter(event) {
     }
     ngOnInit() {
-        // Load the notifications
         let res = [
             {
                 "id": 1,
