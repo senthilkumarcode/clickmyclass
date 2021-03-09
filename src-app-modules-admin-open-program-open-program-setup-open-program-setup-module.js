@@ -889,7 +889,6 @@ class AddOpenProgramComponent {
                     }
                 }
             }
-            console.log(this.programList);
             //Mark for check
             this._changeDetectorRef.markForCheck();
         });
