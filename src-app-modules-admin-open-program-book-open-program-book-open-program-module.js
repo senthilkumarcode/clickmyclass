@@ -212,7 +212,6 @@ class BookOpenProgramComponent {
         this.bookOpenProgramService.setBookOpenProgramDataListType('all');
         this.totalItems = this.programMockData.length;
         this._router.navigateByUrl('/open-programs/book/list/all');
-        console.log(this.program);
     }
     ngOnInit() {
         this.bookOpenProgramService.bookopenprogramdatasubmittedcast.subscribe((res) => {
@@ -225,6 +224,9 @@ class BookOpenProgramComponent {
                 }
                 this._router.navigate(['all'], { relativeTo: route });
             }
+        });
+        this.bookOpenProgramService.bookopenprogramfilterdatacast.subscribe((res) => {
+            this.program = res;
         });
         this.bookOpenProgramService.bookopenprogramdatalistcast.subscribe((res) => {
             if (res != null) {
@@ -863,7 +865,7 @@ function BookOpenProgramListComponent_ng_container_1_Template(rf, ctx) { if (rf 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Total Months");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Duration");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "p", 23);
@@ -880,7 +882,7 @@ function BookOpenProgramListComponent_ng_container_1_Template(rf, ctx) { if (rf 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "div", 26);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "p", 27);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "Total Months");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "Duration");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "p", 23);
@@ -1251,7 +1253,7 @@ class BookOpenProgramService {
     constructor() {
         this.bookOpenProgramMatDrawer = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](null);
         this.bookopenprogramdrawercast = this.bookOpenProgramMatDrawer.asObservable();
-        this.bookOpenProgramFilterData = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](null);
+        this.bookOpenProgramFilterData = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"]({});
         this.bookopenprogramfilterdatacast = this.bookOpenProgramFilterData.asObservable();
         this.bookOpenProgramListData = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](null);
         this.bookopenprogramdatalistcast = this.bookOpenProgramListData.asObservable();
