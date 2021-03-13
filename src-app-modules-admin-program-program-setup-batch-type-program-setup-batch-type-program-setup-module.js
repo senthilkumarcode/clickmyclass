@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var src_app_api_controllers_Batch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/api/controllers/Batch */ "0B2J");
+/* harmony import */ var src_app_swagger_api_controllers_Batch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/swagger/api/controllers/Batch */ "siGO");
 /* harmony import */ var src_app_modules_admin_program_program_setup_program_setup_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/modules/admin/program/program-setup/program-setup.service */ "bBwd");
 /* harmony import */ var src_app_core_session_session_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/core/session/session.service */ "RskC");
 /* harmony import */ var src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/services/shared.service */ "wbvY");
@@ -329,9 +329,12 @@ class BatchTypeProgramSetupComponent {
             // Hide the message
             this.message = null;
             if (res.value) {
-                this.fullClassesList = res.value;
-                this.allData = res.value;
-                this._batchTypesList.next(res.value);
+                let newData = res.value.filter(item => {
+                    return item.active;
+                });
+                this.fullClassesList = newData;
+                this.allData = newData;
+                this._batchTypesList.next(newData);
             }
             else {
                 this.isError = true;
@@ -398,7 +401,7 @@ class BatchTypeProgramSetupComponent {
         this.deleteSubscribe.unsubscribe();
     }
 }
-BatchTypeProgramSetupComponent.ɵfac = function BatchTypeProgramSetupComponent_Factory(t) { return new (t || BatchTypeProgramSetupComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_api_controllers_Batch__WEBPACK_IMPORTED_MODULE_5__["BatchService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_admin_program_program_setup_program_setup_service__WEBPACK_IMPORTED_MODULE_6__["ProgramSetupService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_core_session_session_service__WEBPACK_IMPORTED_MODULE_7__["SessionService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_8__["SharedService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_ui_modals_modals_service__WEBPACK_IMPORTED_MODULE_9__["ModalsService"])); };
+BatchTypeProgramSetupComponent.ɵfac = function BatchTypeProgramSetupComponent_Factory(t) { return new (t || BatchTypeProgramSetupComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_swagger_api_controllers_Batch__WEBPACK_IMPORTED_MODULE_5__["BatchService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_admin_program_program_setup_program_setup_service__WEBPACK_IMPORTED_MODULE_6__["ProgramSetupService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_core_session_session_service__WEBPACK_IMPORTED_MODULE_7__["SessionService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_8__["SharedService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_modules_ui_modals_modals_service__WEBPACK_IMPORTED_MODULE_9__["ModalsService"])); };
 BatchTypeProgramSetupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: BatchTypeProgramSetupComponent, selectors: [["app-batch-type-program-setup"]], decls: 3, vars: 2, consts: [[1, "batch-type-program-setup-wrapper"], [4, "ngIf"], [1, "flex"], [1, "pb-1"], [1, "text-secondary"], [1, "ml-auto"], ["mat-flat-button", "", 3, "color", "click"], [1, "mr-2", 3, "svgIcon"], [1, "mt-16"], [4, "ngFor", "ngForOf"], ["class", "bg-card shadow p-0 mt-4", 4, "ngIf"], [1, "bg-card", "shadow", "mb-6"], [1, "row", "align-items-center"], [1, "col-md-8", "flex", "py-2", "align-items-center"], [1, "list", "ml-8", "md:flex", "md:align-items-center"], [1, "mb-1", "md:mb-0"], [1, "text-secondary", "md:ml-16"], [1, "col-md-4", "icon-actions", "text-right", "pt-8", "pb-2", "md:py-0"], ["svgIcon", "feather:eye", 1, "mx-5", "md:mx-6", "view", 3, "click"], ["svgIcon", "feather:edit", 1, "mx-5", "md:mx-6", "edit", 3, "click"], ["svgIcon", "feather:trash-2", 1, "mx-5", "md:mx-6", "delete", 3, "click"], [3, "appearance", "showIcon", "type", 4, "ngIf"], [3, "appearance", "showIcon", "type"], [1, "bg-card", "shadow", "p-0", "mt-4"], [3, "totalItems", "ItemStartIndex", "ItemEndIndex", "itemLimit", "outputParams"]], template: function BatchTypeProgramSetupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, BatchTypeProgramSetupComponent_app_loader_1_Template, 1, 0, "app-loader", 1);
@@ -418,7 +421,7 @@ BatchTypeProgramSetupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0_
                 styleUrls: ['./batch-type-program-setup.component.scss'],
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }, { type: src_app_api_controllers_Batch__WEBPACK_IMPORTED_MODULE_5__["BatchService"] }, { type: src_app_modules_admin_program_program_setup_program_setup_service__WEBPACK_IMPORTED_MODULE_6__["ProgramSetupService"] }, { type: src_app_core_session_session_service__WEBPACK_IMPORTED_MODULE_7__["SessionService"] }, { type: src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_8__["SharedService"] }, { type: src_app_modules_ui_modals_modals_service__WEBPACK_IMPORTED_MODULE_9__["ModalsService"] }]; }, null); })();
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }, { type: src_app_swagger_api_controllers_Batch__WEBPACK_IMPORTED_MODULE_5__["BatchService"] }, { type: src_app_modules_admin_program_program_setup_program_setup_service__WEBPACK_IMPORTED_MODULE_6__["ProgramSetupService"] }, { type: src_app_core_session_session_service__WEBPACK_IMPORTED_MODULE_7__["SessionService"] }, { type: src_app_shared_services_shared_service__WEBPACK_IMPORTED_MODULE_8__["SharedService"] }, { type: src_app_modules_ui_modals_modals_service__WEBPACK_IMPORTED_MODULE_9__["ModalsService"] }]; }, null); })();
 
 
 /***/ })
