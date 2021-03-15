@@ -228,7 +228,8 @@ class StyleProgramSetupComponent {
             this._stylesList.next(this.fullStylesList);
         }
     }
-    ngOnInit() {
+    getStyleList() {
+        this.isDataLoaded = false;
         let params = {
             UserId: this.sessionService.userId,
             ClientId: this.sessionService.clientId
@@ -267,6 +268,14 @@ class StyleProgramSetupComponent {
                 showIcon: false,
                 type: 'error'
             };
+        });
+    }
+    ngOnInit() {
+        this.getStyleList();
+        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+            if (res) {
+                this.getStyleList();
+            }
         });
         this.styles$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(res => res != null)).subscribe((res) => {
             this.totalItems = res.length;

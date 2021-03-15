@@ -178,7 +178,7 @@ class ModeProgramSetupComponent {
         this.isDataLoaded = false;
         this.isError = false;
         this.modeData = "";
-        this.fullStylesList = [];
+        this.fullModesList = [];
         this.search = '';
         this.ItemStartIndex = 0;
         this.itemLimit = 5;
@@ -224,11 +224,12 @@ class ModeProgramSetupComponent {
             this._modesList.next(newData);
         }
         else {
-            this.fullStylesList = this.allData;
-            this._modesList.next(this.fullStylesList);
+            this.fullModesList = this.allData;
+            this._modesList.next(this.fullModesList);
         }
     }
-    ngOnInit() {
+    getModeList() {
+        this.isDataLoaded = false;
         let params = {
             UserId: this.sessionService.userId,
             ClientId: this.sessionService.clientId
@@ -241,7 +242,7 @@ class ModeProgramSetupComponent {
                 let newData = res.value.filter(item => {
                     return item.active;
                 });
-                this.fullStylesList = newData;
+                this.fullModesList = newData;
                 this.allData = newData;
                 this._modesList.next(newData);
             }
@@ -268,6 +269,14 @@ class ModeProgramSetupComponent {
                 type: 'error'
             };
         });
+    }
+    ngOnInit() {
+        this.getModeList();
+        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+            if (res) {
+                this.getModeList();
+            }
+        });
         this.modes$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(res => res != null)).subscribe((res) => {
             this.totalItems = res.length;
             this.ItemStartIndex = 0;
@@ -281,7 +290,7 @@ class ModeProgramSetupComponent {
         // Subscribe to search input field value changes
         this.searchData.valueChanges
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((val) => {
-            let newData = this.fullStylesList.filter(item => {
+            let newData = this.fullModesList.filter(item => {
                 for (let field in item) {
                     if (item[field] === null || item[field] === undefined) {
                         continue;
@@ -296,10 +305,21 @@ class ModeProgramSetupComponent {
             .subscribe();
         this.deleteSubscribe = this.modalsService.deleteindexcast.subscribe((id) => {
             if (id != null) {
-                this.fullStylesList = this.fullStylesList.filter(item => {
-                    return item.id != id;
+                let details = {
+                    UserId: this.sessionService.userId,
+                    ClientId: this.sessionService.clientId,
+                    RoomId: id,
+                };
+                this.batchService.deleteBatchMode(details).subscribe((res) => {
+                    if (res.value) {
+                        this.fullModesList = this.fullModesList.filter(item => {
+                            return item.id != id;
+                        });
+                        this.allData = this.fullModesList;
+                        this._modesList.next(this.fullModesList);
+                    }
+                }, error => {
                 });
-                this._modesList.next(this.fullStylesList);
             }
         });
     }

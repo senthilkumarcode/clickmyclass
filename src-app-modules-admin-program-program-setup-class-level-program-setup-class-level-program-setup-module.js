@@ -319,7 +319,8 @@ class ClassLevelProgramSetupComponent {
             this._classesLevelList.next(this.fullClassesList);
         }
     }
-    ngOnInit() {
+    getClassLevelList() {
+        this.isDataLoaded = false;
         let params = {
             UserId: this.sessionService.userId,
             clientId: this.sessionService.clientId
@@ -359,6 +360,14 @@ class ClassLevelProgramSetupComponent {
                 type: 'error'
             };
         });
+    }
+    ngOnInit() {
+        this.getClassLevelList();
+        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+            if (res) {
+                this.getClassLevelList();
+            }
+        });
         this.classes$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(res => res != null)).subscribe((res) => {
             this.totalItems = res.length;
             this.ItemStartIndex = 0;
@@ -387,10 +396,21 @@ class ClassLevelProgramSetupComponent {
             .subscribe();
         this.deleteSubscribe = this.modalsService.deleteindexcast.subscribe((id) => {
             if (id != null) {
-                this.fullClassesList = this.fullClassesList.filter(item => {
-                    return item.id != id;
+                let details = {
+                    UserId: this.sessionService.userId,
+                    ClientId: this.sessionService.clientId,
+                    ClassLevelId: id,
+                };
+                this.classService.deleteClassLevel(details).subscribe((res) => {
+                    if (res.value) {
+                        this.fullClassesList = this.fullClassesList.filter(item => {
+                            return item.id != id;
+                        });
+                        this.allData = this.fullClassesList;
+                        this._classesLevelList.next(this.fullClassesList);
+                    }
+                }, error => {
                 });
-                this._classesLevelList.next(this.fullClassesList);
             }
         });
     }

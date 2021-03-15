@@ -200,7 +200,6 @@ class ResponseModalComponent {
         this.modalsService = modalsService;
         this.content = '';
         this.message = data;
-        console.log(data);
     }
     close() {
         this.confirmDialogRef.close(true);

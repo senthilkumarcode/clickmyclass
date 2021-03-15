@@ -215,7 +215,7 @@ class RoomProgramSetupComponent {
         this.isDataLoaded = false;
         this.isError = false;
         this.roomData = "";
-        this.fullStylesList = [];
+        this.fullRoomsList = [];
         this.search = '';
         this.ItemStartIndex = 0;
         this.itemLimit = 5;
@@ -261,11 +261,12 @@ class RoomProgramSetupComponent {
             this._roomsList.next(newData);
         }
         else {
-            this.fullStylesList = this.allData;
-            this._roomsList.next(this.fullStylesList);
+            this.fullRoomsList = this.allData;
+            this._roomsList.next(this.fullRoomsList);
         }
     }
-    ngOnInit() {
+    getRoomList() {
+        this.isDataLoaded = false;
         let params = {
             UserId: this.sessionService.userId,
             ClientId: this.sessionService.clientId
@@ -278,7 +279,7 @@ class RoomProgramSetupComponent {
                 let newData = res.value.filter(item => {
                     return item.active;
                 });
-                this.fullStylesList = newData;
+                this.fullRoomsList = newData;
                 this.allData = newData;
                 this._roomsList.next(newData);
             }
@@ -305,6 +306,14 @@ class RoomProgramSetupComponent {
                 type: 'error'
             };
         });
+    }
+    ngOnInit() {
+        this.getRoomList();
+        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+            if (res) {
+                this.getRoomList();
+            }
+        });
         this.rooms$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(res => res != null)).subscribe((res) => {
             this.totalItems = res.length;
             this.ItemStartIndex = 0;
@@ -318,7 +327,7 @@ class RoomProgramSetupComponent {
         // Subscribe to search input field value changes
         this.searchData.valueChanges
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((val) => {
-            let newData = this.fullStylesList.filter(item => {
+            let newData = this.fullRoomsList.filter(item => {
                 for (let field in item) {
                     if (item[field] === null || item[field] === undefined) {
                         continue;
@@ -333,10 +342,21 @@ class RoomProgramSetupComponent {
             .subscribe();
         this.deleteSubscribe = this.modalsService.deleteindexcast.subscribe((id) => {
             if (id != null) {
-                this.fullStylesList = this.fullStylesList.filter(item => {
-                    return item.id != id;
+                let details = {
+                    UserId: this.sessionService.userId,
+                    ClientId: this.sessionService.clientId,
+                    RoomId: id,
+                };
+                this.roomService.deleteRoom(details).subscribe((res) => {
+                    if (res.value) {
+                        this.fullRoomsList = this.fullRoomsList.filter(item => {
+                            return item.id != id;
+                        });
+                        this.allData = this.fullRoomsList;
+                        this._roomsList.next(this.fullRoomsList);
+                    }
+                }, error => {
                 });
-                this._roomsList.next(this.fullStylesList);
             }
         });
     }

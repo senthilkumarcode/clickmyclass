@@ -269,7 +269,7 @@ class BatchTypeProgramSetupComponent {
         this.isDataLoaded = false;
         this.isError = false;
         this.batchTypeData = "";
-        this.fullClassesList = [];
+        this.fullBatchesList = [];
         this.search = '';
         this.ItemStartIndex = 0;
         this.itemLimit = 5;
@@ -315,11 +315,12 @@ class BatchTypeProgramSetupComponent {
             this._batchTypesList.next(newData);
         }
         else {
-            this.fullClassesList = this.allData;
-            this._batchTypesList.next(this.fullClassesList);
+            this.fullBatchesList = this.allData;
+            this._batchTypesList.next(this.fullBatchesList);
         }
     }
-    ngOnInit() {
+    getBatchTypeList() {
+        this.isDataLoaded = false;
         let params = {
             UserId: this.sessionService.userId,
             ClientId: this.sessionService.clientId
@@ -332,7 +333,7 @@ class BatchTypeProgramSetupComponent {
                 let newData = res.value.filter(item => {
                     return item.active;
                 });
-                this.fullClassesList = newData;
+                this.fullBatchesList = newData;
                 this.allData = newData;
                 this._batchTypesList.next(newData);
             }
@@ -359,6 +360,14 @@ class BatchTypeProgramSetupComponent {
                 type: 'error'
             };
         });
+    }
+    ngOnInit() {
+        this.getBatchTypeList();
+        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+            if (res) {
+                this.getBatchTypeList();
+            }
+        });
         this.batches$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(res => res != null)).subscribe((res) => {
             this.totalItems = res.length;
             this.ItemStartIndex = 0;
@@ -372,7 +381,7 @@ class BatchTypeProgramSetupComponent {
         // Subscribe to search input field value changes
         this.searchData.valueChanges
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])((val) => {
-            let newData = this.fullClassesList.filter(item => {
+            let newData = this.fullBatchesList.filter(item => {
                 for (let field in item) {
                     if (item[field] === null || item[field] === undefined) {
                         continue;
@@ -387,10 +396,21 @@ class BatchTypeProgramSetupComponent {
             .subscribe();
         this.deleteSubscribe = this.modalsService.deleteindexcast.subscribe((id) => {
             if (id != null) {
-                this.fullClassesList = this.fullClassesList.filter(item => {
-                    return item.id != id;
+                let details = {
+                    UserId: this.sessionService.userId,
+                    ClientId: this.sessionService.clientId,
+                    BatchCategoryId: id,
+                };
+                this.batchService.deleteBatchCategory(details).subscribe((res) => {
+                    if (res.value) {
+                        this.fullBatchesList = this.fullBatchesList.filter(item => {
+                            return item.id != id;
+                        });
+                        this.allData = this.fullBatchesList;
+                        this._batchTypesList.next(this.fullBatchesList);
+                    }
+                }, error => {
                 });
-                this._batchTypesList.next(this.fullClassesList);
             }
         });
     }
