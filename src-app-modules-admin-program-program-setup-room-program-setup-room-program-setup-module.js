@@ -309,7 +309,7 @@ class RoomProgramSetupComponent {
     }
     ngOnInit() {
         this.getRoomList();
-        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+        this.programSetupService.programsetupentryrefreshcast.subscribe((res) => {
             if (res) {
                 this.getRoomList();
             }

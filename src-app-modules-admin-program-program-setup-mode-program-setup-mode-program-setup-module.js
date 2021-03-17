@@ -272,7 +272,7 @@ class ModeProgramSetupComponent {
     }
     ngOnInit() {
         this.getModeList();
-        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+        this.programSetupService.programsetupentryrefreshcast.subscribe((res) => {
             if (res) {
                 this.getModeList();
             }

@@ -428,7 +428,7 @@ const routes = [
         children: [
             {
                 path: ":type/:id",
-                loadChildren: () => __webpack_require__.e(/*! import() | src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module */ "src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module").then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/add-program-setup/add-program-setup.module */ "8qON")).then(m => m.AddProgramSetupModule),
+                loadChildren: () => Promise.all(/*! import() | src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module */[__webpack_require__.e("common"), __webpack_require__.e("src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module")]).then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/add-program-setup/add-program-setup.module */ "8qON")).then(m => m.AddProgramSetupModule),
                 outlet: "drawer",
                 resolve: {
                     ProgramSetupResolver: _program_setup_resolver__WEBPACK_IMPORTED_MODULE_3__["ProgramSetupResolver"]
@@ -436,7 +436,7 @@ const routes = [
             },
             {
                 path: "view",
-                loadChildren: () => __webpack_require__.e(/*! import() | src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module */ "src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module").then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/add-program-setup/add-program-setup.module */ "8qON")).then(m => m.AddProgramSetupModule),
+                loadChildren: () => Promise.all(/*! import() | src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module */[__webpack_require__.e("common"), __webpack_require__.e("src-app-modules-admin-program-program-setup-add-program-setup-add-program-setup-module")]).then(__webpack_require__.bind(null, /*! src/app/modules/admin/program/program-setup/add-program-setup/add-program-setup.module */ "8qON")).then(m => m.AddProgramSetupModule),
                 outlet: "drawer",
                 resolve: {
                     ProgramSetupResolver: _program_setup_resolver__WEBPACK_IMPORTED_MODULE_3__["ProgramSetupResolver"]
@@ -659,7 +659,7 @@ class ProgramSetupService {
         this.programSetupMatDrawer = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](null);
         this.programsetupmatdrawercast = this.programSetupMatDrawer.asObservable();
         this.programSetupEntryRefresh = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](false);
-        this.programsetupmnentryrefreshcast = this.programSetupEntryRefresh.asObservable();
+        this.programsetupentryrefreshcast = this.programSetupEntryRefresh.asObservable();
     }
     getProgramSetupMatDrawer() {
         return this.programSetupMatDrawer.value;
@@ -867,6 +867,7 @@ class MainProgramSetupComponent {
         this.search = '';
         this.ItemStartIndex = 0;
         this.itemLimit = 5;
+        this.selectedData = {};
         // Set the private defaults
         this._unsubscribeAll = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
         this.message = null;
@@ -881,6 +882,7 @@ class MainProgramSetupComponent {
         this.programSetupService.setProgramSetupMatDrawer({ id: id, category: 'main', data: null, isedit: false });
     }
     editMainProgram(data) {
+        this.selectedData = data;
         this.programSetupService.setProgramSetupMatDrawer({ id: data.id, category: 'main', data: data, isedit: true });
     }
     viewMainProgram(data) {
@@ -957,7 +959,7 @@ class MainProgramSetupComponent {
     }
     ngOnInit() {
         this.getProgramList();
-        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+        this.programSetupService.programsetupentryrefreshcast.subscribe((res) => {
             if (res) {
                 this.getProgramList();
             }

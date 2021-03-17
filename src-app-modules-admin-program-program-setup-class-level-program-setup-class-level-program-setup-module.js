@@ -363,7 +363,7 @@ class ClassLevelProgramSetupComponent {
     }
     ngOnInit() {
         this.getClassLevelList();
-        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+        this.programSetupService.programsetupentryrefreshcast.subscribe((res) => {
             if (res) {
                 this.getClassLevelList();
             }

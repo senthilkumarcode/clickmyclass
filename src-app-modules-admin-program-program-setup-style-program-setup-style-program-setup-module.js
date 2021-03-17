@@ -272,7 +272,7 @@ class StyleProgramSetupComponent {
     }
     ngOnInit() {
         this.getStyleList();
-        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+        this.programSetupService.programsetupentryrefreshcast.subscribe((res) => {
             if (res) {
                 this.getStyleList();
             }
@@ -305,10 +305,21 @@ class StyleProgramSetupComponent {
             .subscribe();
         this.deleteSubscribe = this.modalsService.deleteindexcast.subscribe((id) => {
             if (id != null) {
-                this.fullStylesList = this.fullStylesList.filter(item => {
-                    return item.id != id;
+                let details = {
+                    UserId: this.sessionService.userId,
+                    ClientId: this.sessionService.clientId,
+                    StyleId: id,
+                };
+                this.styleService.deleteStyle(details).subscribe((res) => {
+                    if (res.value) {
+                        this.fullStylesList = this.fullStylesList.filter(item => {
+                            return item.id != id;
+                        });
+                        this.allData = this.fullStylesList;
+                        this._stylesList.next(this.fullStylesList);
+                    }
+                }, error => {
                 });
-                this._stylesList.next(this.fullStylesList);
             }
         });
     }

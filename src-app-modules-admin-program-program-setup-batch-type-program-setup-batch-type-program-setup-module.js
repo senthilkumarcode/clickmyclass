@@ -363,7 +363,7 @@ class BatchTypeProgramSetupComponent {
     }
     ngOnInit() {
         this.getBatchTypeList();
-        this.programSetupService.programsetupmnentryrefreshcast.subscribe((res) => {
+        this.programSetupService.programsetupentryrefreshcast.subscribe((res) => {
             if (res) {
                 this.getBatchTypeList();
             }
