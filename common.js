@@ -52,6 +52,9 @@ class ApiService {
     addUpdateOpenProgramPackage(data) {
         return this.http.post(`/api/OpenProgram/AddUpdateOpenProgramPackage`, data || {});
     }
+    addNotificationCategory(data) {
+        return this.http.post(`/api/NotificationCategory/AddNotificationCategory`, data || {});
+    }
 }
 ApiService.ɵfac = function ApiService_Factory(t) { return new (t || ApiService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
 ApiService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ApiService, factory: ApiService.ɵfac, providedIn: 'root' });
