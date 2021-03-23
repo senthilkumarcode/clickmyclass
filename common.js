@@ -66,6 +66,45 @@ ApiService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInject
     }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
 
 
+/***/ }),
+
+/***/ "gk47":
+/*!****************************************************************************************************************************!*\
+  !*** ./src/app/modules/admin/appointment/appointment-profile/appointment-profile-list/appointment-profile-list.service.ts ***!
+  \****************************************************************************************************************************/
+/*! exports provided: AppointmentProfileListService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppointmentProfileListService", function() { return AppointmentProfileListService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+
+
+
+class AppointmentProfileListService {
+    constructor() {
+        this.appointmentProfileListMatDrawer = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](null);
+        this.appointmentprofilelostdrawer = this.appointmentProfileListMatDrawer.asObservable();
+    }
+    getAppointmentProfileListMatDrawer() {
+        return this.appointmentProfileListMatDrawer.value;
+    }
+    setAppointmentProfileListMatDrawer(value) {
+        this.appointmentProfileListMatDrawer.next(value);
+    }
+}
+AppointmentProfileListService.ɵfac = function AppointmentProfileListService_Factory(t) { return new (t || AppointmentProfileListService)(); };
+AppointmentProfileListService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: AppointmentProfileListService, factory: AppointmentProfileListService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppointmentProfileListService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+
+
 /***/ })
 
 }]);
