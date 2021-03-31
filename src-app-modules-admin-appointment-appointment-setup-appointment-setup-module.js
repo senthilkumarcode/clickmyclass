@@ -517,7 +517,6 @@ class AppointmentSetupResolver {
         var data = this.appointmentSetupService.getAppointmentSetupMatDrawer();
         if (data == null) {
             const parentUrl = state.url.split('/').slice(0, -3).join('/');
-            console.log(parentUrl);
             // Navigate to parent url
             this.router.navigateByUrl(parentUrl);
         }

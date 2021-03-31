@@ -226,7 +226,6 @@ class NotificationListComponent {
         return moment__WEBPACK_IMPORTED_MODULE_4__(date).format('DD/MM/YYYY hh:mm A');
     }
     onGlSearchFilter(event) {
-        console.log(event);
         if (event != "") {
             let newData = this.allData.filter(item => {
                 for (let field in item) {

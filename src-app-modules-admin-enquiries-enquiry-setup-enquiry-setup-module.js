@@ -553,7 +553,6 @@ class EnquirySetupComponent {
         this._changeDetectorRef.markForCheck();
     }
     addEnquirySetupCategory(data) {
-        console.log(data);
         if (data) {
             // Get the current activated route
             let route = this._activatedRoute;

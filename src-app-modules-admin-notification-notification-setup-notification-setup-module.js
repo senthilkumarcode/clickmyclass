@@ -932,7 +932,6 @@ class NotificationSetupResolver {
         var data = this.notificationSetupService.getNotificationSetupMatDrawer();
         if (data == null) {
             const parentUrl = state.url.split('/').slice(0, -3).join('/');
-            console.log(parentUrl);
             // Navigate to parent url
             this.router.navigateByUrl(parentUrl);
         }

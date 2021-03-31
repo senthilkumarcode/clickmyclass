@@ -147,7 +147,6 @@ class AddProgramComponent {
     }
     ngOnInit() {
         this.sharedService.timezonecast.subscribe(timeZone => {
-            console.log(timeZone);
             this.timeZone = timeZone;
         });
         this.program = {};

@@ -290,7 +290,6 @@ class EnquiryCommentsComponent {
                 this.fullCommentsList = res.value;
                 this.allData = res.value;
                 this._commentsList.next(res.value);
-                console.log(res.value);
             }
             else {
                 this.isError = true;
