@@ -530,7 +530,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: 'list', component: _activity_test_component__WEBPACK_IMPORTED_MODULE_3__["ActivityTestComponent"] },
     { path: 'list/details/:id',
-        loadChildren: () => Promise.all(/*! import() | src-app-modules-admin-activity-activity-test-activity-test-item-activity-test-item-module */[__webpack_require__.e("default~src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignm~6aa40e76"), __webpack_require__.e("src-app-modules-admin-activity-activity-test-activity-test-item-activity-test-item-module")]).then(__webpack_require__.bind(null, /*! src/app/modules/admin/activity/activity-test/activity-test-item/activity-test-item.module */ "smRH")).then(m => m.ActivityTestItemModule),
+        loadChildren: () => Promise.all(/*! import() | src-app-modules-admin-activity-activity-test-activity-test-item-activity-test-item-module */[__webpack_require__.e("default~src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignm~b544fb31"), __webpack_require__.e("src-app-modules-admin-activity-activity-test-activity-test-item-activity-test-item-module")]).then(__webpack_require__.bind(null, /*! src/app/modules/admin/activity/activity-test/activity-test-item/activity-test-item.module */ "smRH")).then(m => m.ActivityTestItemModule),
         resolve: {
             ActivityTestItemResolver: _activity_test_resolver__WEBPACK_IMPORTED_MODULE_2__["ActivityTestItemResolver"]
         }

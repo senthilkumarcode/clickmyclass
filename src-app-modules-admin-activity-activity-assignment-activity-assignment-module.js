@@ -493,7 +493,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: 'list', component: _activity_assignment_component__WEBPACK_IMPORTED_MODULE_3__["ActivityAssignmentComponent"] },
     { path: 'list/details/:id',
-        loadChildren: () => Promise.all(/*! import() | src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignment-item-module */[__webpack_require__.e("default~src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignm~6aa40e76"), __webpack_require__.e("src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignment-item-module")]).then(__webpack_require__.bind(null, /*! src/app/modules/admin/activity/activity-assignment/activity-assignment-item/activity-assignment-item.module */ "FsVl")).then(m => m.ActivityAssignmentItemModule),
+        loadChildren: () => Promise.all(/*! import() | src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignment-item-module */[__webpack_require__.e("default~src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignm~b544fb31"), __webpack_require__.e("src-app-modules-admin-activity-activity-assignment-activity-assignment-item-activity-assignment-item-module")]).then(__webpack_require__.bind(null, /*! src/app/modules/admin/activity/activity-assignment/activity-assignment-item/activity-assignment-item.module */ "FsVl")).then(m => m.ActivityAssignmentItemModule),
         resolve: {
             ActivityAssignmentItemResolver: _activity_assignment_resolver__WEBPACK_IMPORTED_MODULE_2__["ActivityAssignmentItemResolver"]
         }

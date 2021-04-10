@@ -55,6 +55,9 @@ class ApiService {
     addNotificationCategory(data) {
         return this.http.post(`/api/NotificationCategory/AddNotificationCategory`, data || {});
     }
+    addSubProgramBatch(data) {
+        return this.http.post(`/api/SubProgramBatch/AddSubProgramBatch`, data || {});
+    }
 }
 ApiService.ɵfac = function ApiService_Factory(t) { return new (t || ApiService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
 ApiService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ApiService, factory: ApiService.ɵfac, providedIn: 'root' });
